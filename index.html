@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Screaming jumpscare prank</title>
+<meta name="description" content="Screaming lady prank. For more pranks visit out site screenprank.com">
+<meta name="keywords" content="Screaming prank, screeming screen prank, scream jumpscare pc prank">
+<meta property="og:image" content="https://screenprank.com/imgs/jumpscare.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Screenprank" />
+<script type="06f24d37e0da5a4cfde130c9-text/javascript" src="../js/noclick.js"></script>
+<style> tml,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+
+  }
+  img{
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
+
+
+  }
+
+  .hidden{
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+  }
+  </style>
+<script type="06f24d37e0da5a4cfde130c9-text/javascript">
+    function resizeToMax(id) {
+      myImage = new Image()
+      var img = document.getElementById(id);
+      myImage.src = img.src;
+      if (myImage.width > myImage.height) {
+        img.style.width = "100%";
+      } else {
+        img.style.height = "100%";
+      }
+    }
+    // if (typeof document.cancelFullScreen != 'undefined' && document.fullScreenEnabled === true) {
+    //   // mozilla proposal
+    //   element.requestFullScreen();
+    //   document.cancelFullScreen();
+    //
+    //   // Webkit (works in Safari and Chrome Canary)
+    //   element.webkitRequestFullScreen();
+    //   document.webkitCancelFullScreen();
+    //
+    //   // Firefox (works in nightly)
+    //   element.mozRequestFullScreen();
+    //   document.mozCancelFullScreen();
+    //
+    //   // W3C Proposal
+    //   element.requestFullscreen();
+    //   document.exitFullscreen();
+    // }
+    //
+    // if (document.fullscreenEnabled) {
+    //   requestFullscreen(document.documentElement);
+    // }
+  </script>
+<script type="06f24d37e0da5a4cfde130c9-text/javascript">
+    window.onload = maxWindow;
+
+    function maxWindow() {
+      window.moveTo(0, 0);
+
+
+      if (document.all) {
+        top.window.resizeTo(screen.availWidth, screen.availHeight);
+      } else if (document.layers || document.getElementById) {
+        if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+          top.window.outerHeight = screen.availHeight;
+          top.window.outerWidth = screen.availWidth;
+        }
+      }
+    }
+    function startAudio(){
+      var audio = new Audio('../audio/jumpscaresound.mp3');
+      audio.play();
+      document.getElementById("image").src = "../imgs/jeff jumpscare.gif";
+
+    }
+
+  </script>
+</body>
+</html>
